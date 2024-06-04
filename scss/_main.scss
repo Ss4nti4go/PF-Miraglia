@@ -119,21 +119,22 @@ img:hover {
             margin: 2rem;
             padding: 15px;
         }
-    
+        h4 p{
+            color: $colorNaranjaRojizo;
+        }
         td {
     
             border-bottom: #cfc4c4 solid 1px;
             text-align: left;
             transition: transform 0.2s ease-in;
-    
             .table-subtitle {
                 color: #d1a666;
             }
         }
     
         td:hover {
-            transform: scale(1.02);
-    
+            margin: auto;
+            width: auto;
             .table-subtitle {
                 color: $colorAmarilloClaro;
             }
@@ -965,6 +966,12 @@ img:hover {
             height: auto;
             margin-top: 5rem;
             margin-bottom: 15rem;
+            .content_beneficios-section:hover{
+                transform: none;
+            }
+            h2{
+                font-size: 4vh;
+            }
         }
         .content_textobeneficios{
             display: flex;
@@ -981,8 +988,10 @@ img:hover {
             td {
                 text-align: center;
             }  
-            h4{
-                display: inline-block;
+        
+            .content_subtitulo-horarios{
+                display: flex;
+                font-size: 4vh;
             }
         }
     }

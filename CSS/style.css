@@ -348,6 +348,9 @@ img:hover {
   margin: 2rem;
   padding: 15px;
 }
+.container_main .content_horarios h4 p {
+  color: #ED6A5A;
+}
 .container_main .content_horarios td {
   border-bottom: #cfc4c4 solid 1px;
   text-align: left;
@@ -357,7 +360,8 @@ img:hover {
   color: #d1a666;
 }
 .container_main .content_horarios td:hover {
-  transform: scale(1.02);
+  margin: auto;
+  width: auto;
 }
 .container_main .content_horarios td:hover .table-subtitle {
   color: #f0bf76;
@@ -1072,6 +1076,12 @@ img:hover {
     margin-top: 5rem;
     margin-bottom: 15rem;
   }
+  .container_main .content_beneficios .content_beneficios-section:hover {
+    transform: none;
+  }
+  .container_main .content_beneficios h2 {
+    font-size: 4vh;
+  }
   .container_main .content_textobeneficios {
     display: flex;
     flex-direction: column;
@@ -1087,8 +1097,9 @@ img:hover {
   .container_main .content_horarios td {
     text-align: center;
   }
-  .container_main .content_horarios h4 {
-    display: inline-block;
+  .container_main .content_horarios .content_subtitulo-horarios {
+    display: flex;
+    font-size: 4vh;
   }
   .motivacion_container {
     margin: 8rem 0rem 5rem 0rem;
