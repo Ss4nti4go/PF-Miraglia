@@ -6,13 +6,18 @@ body {
 a {
     text-decoration: none;
 }
+h2,h3,h4,h5{
+    p{
+        font-family: "Montserrat", sans-serif;
+    }
+}
 h3{
     display: flex;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     text-wrap: nowrap;
     color: $colorNaranjaRojizo;
-    font-size: 6vh;
+    font-size: 5.4vh;
     p {
         color: black;
     }
@@ -22,14 +27,13 @@ h2 {
     flex-direction: row;
     text-align: center;
     font-family: "Montserrat", sans-serif;
-    color: #000000;
+    color: #2e4442;
     font-size: 6vh;
     p {
         color: $colorNaranjaRojizo;
         font-size: 7vh;
     }
 }
-
 .btn-primary:hover {
     background-color: #397a3c;
 }
@@ -166,7 +170,30 @@ img:hover {
             font-family: Roboto, sans-serif;
         }
     }
-
+    .container_boximages {
+        grid-area: box_imagenes;
+        width: auto;
+        margin: auto;
+        display: flex;
+        text-align: center;
+        div{
+            margin-left: 2rem;
+        }
+        img{
+            margin: 1rem;
+            width: 40vh;
+            max-width: 350px;
+        }
+        h2 {
+            font-family: "Montserrat", sans-serif;
+            margin: auto;
+            p {
+                color: $colorNaranjaRojizo;
+                font-size: 8vh;
+            }
+        }
+    
+    }
     .content_stuff {
         font-size: 2vh;
         display: flex;
@@ -176,38 +203,31 @@ img:hover {
         height: auto;
         padding: 0.5rem;
         grid-area: main-stuff;
-
         div h5 {
             margin: 1rem;
             font-size: 1.5vh;
             color: $colorAmarilloClaro;
             text-align: left;
         }
-
         h2 {
-            font-family: "Montserrat", sans-serif;
-            color: #2e4442;
             text-align: left;
         }
-
         .content_stuff-text {
             height: 10vh;
             width: 50vh;
-
             p {
-
                 text-wrap: wrap;
                 font-family: "Montserrat", sans-serif;
                 text-align: center;
             }
         }
-
         div img {
             margin: 0rem 0rem 0rem 8rem;
             width: 30vh;
             box-shadow: none;
-            border-bottom: #b4afaf 1px solid;
+            border-bottom: #b4afaf 2px solid;
         }
+        
     }
 }
 
@@ -400,18 +420,17 @@ img:hover {
     position: relative;
     width: 100%; 
     height: auto;
-    align-items: center;
-    justify-content: center;
     margin: 10rem 0rem 10rem 0rem;
-    height: 25rem;
+    height: 30rem;
     background-color: $colorAzulOscuro;
     grid-area: motivacion;
     .motivacion_container-boxeo{
         position: absolute;
         top: 50%;
-        left: 40%;
-        text-align: center;
+        left: 38%;
         h2 {
+             text-align: center;
+              align-items: center;
             color: $colorAmarilloClaro;
             p {
     
@@ -423,29 +442,16 @@ img:hover {
         position: absolute;
         top: 45%;
         left: 30%;
-        text-align: center;
         h2 {
+            align-items: center;
             color: #ffffff;
             p {
-    
+                font-size: 10vh;
                 color: #ff9a76;
             }
         }
      
     }   
-    img {
-        display: block;
-        transition: none;
-        transform: none;
-        width: 100%;
-        height: auto;
-    }
-    .content_subtitulo-motivacion{
-        width: auto; 
-        position: absolute;
-        text-align: start;
-        top:0;
-    }
 }
 .content_beneficios-section {
     grid-area: beneficios;
@@ -458,34 +464,7 @@ img:hover {
     border-right: $colorGrisAzulado 1px solid;
 }
 
-/*Contendor de imagenes en pagina BOXEO*/
-.container_boximages {
-    padding: 3rem 1rem 3rem 3rem;
-    margin: auto;
-    grid-area: box_imagenes;
-    width: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    div{
-        margin-left: 5rem;
-        img{
-            width: 50vh;
-        }
-    }
-    h2 {
-        font-family: "Montserrat", sans-serif;
-        color: #2e4442;
-        text-align: left;
-
-        p {
-            color: $colorNaranjaRojizo;
-            font-size: 8vh;
-        }
-    }
-
-}
-
+/*Contendor de imagenes en pagina BOXEO*
 
 /*CIERRA Contendor de imagenes en pagina BOXEO*/
 .header_imagenes {
@@ -976,6 +955,12 @@ img:hover {
                 }
             }
 
+        }
+        .content_subtitulo-motivacion{
+            width: auto; 
+            position: absolute;
+            text-align: center;
+            top:0;
         }
     }
     .gridboxeo-container {

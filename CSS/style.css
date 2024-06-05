@@ -249,13 +249,17 @@ a {
   text-decoration: none;
 }
 
+h2 p, h3 p, h4 p, h5 p {
+  font-family: "Montserrat", sans-serif;
+}
+
 h3 {
   display: flex;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   text-wrap: nowrap;
   color: #ED6A5A;
-  font-size: 6vh;
+  font-size: 5.4vh;
 }
 h3 p {
   color: black;
@@ -266,7 +270,7 @@ h2 {
   flex-direction: row;
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  color: #000000;
+  color: #2e4442;
   font-size: 6vh;
 }
 h2 p {
@@ -394,6 +398,29 @@ img:hover {
 .gridboxeo-container .content_maintext h4 {
   font-family: Roboto, sans-serif;
 }
+.gridboxeo-container .container_boximages {
+  grid-area: box_imagenes;
+  width: auto;
+  margin: auto;
+  display: flex;
+  text-align: center;
+}
+.gridboxeo-container .container_boximages div {
+  margin-left: 2rem;
+}
+.gridboxeo-container .container_boximages img {
+  margin: 1rem;
+  width: 40vh;
+  max-width: 350px;
+}
+.gridboxeo-container .container_boximages h2 {
+  font-family: "Montserrat", sans-serif;
+  margin: auto;
+}
+.gridboxeo-container .container_boximages h2 p {
+  color: #ED6A5A;
+  font-size: 8vh;
+}
 .gridboxeo-container .content_stuff {
   font-size: 2vh;
   display: flex;
@@ -411,8 +438,6 @@ img:hover {
   text-align: left;
 }
 .gridboxeo-container .content_stuff h2 {
-  font-family: "Montserrat", sans-serif;
-  color: #2e4442;
   text-align: left;
 }
 .gridboxeo-container .content_stuff .content_stuff-text {
@@ -428,7 +453,7 @@ img:hover {
   margin: 0rem 0rem 0rem 8rem;
   width: 30vh;
   box-shadow: none;
-  border-bottom: #b4afaf 1px solid;
+  border-bottom: #b4afaf 2px solid;
 }
 
 .container_musculacion {
@@ -592,20 +617,19 @@ img:hover {
   position: relative;
   width: 100%;
   height: auto;
-  align-items: center;
-  justify-content: center;
   margin: 10rem 0rem 10rem 0rem;
-  height: 25rem;
+  height: 30rem;
   background-color: rgb(35, 42, 53);
   grid-area: motivacion;
 }
 .motivacion_container .motivacion_container-boxeo {
   position: absolute;
   top: 50%;
-  left: 40%;
-  text-align: center;
+  left: 38%;
 }
 .motivacion_container .motivacion_container-boxeo h2 {
+  text-align: center;
+  align-items: center;
   color: #f0bf76;
 }
 .motivacion_container .motivacion_container-boxeo h2 p {
@@ -615,26 +639,14 @@ img:hover {
   position: absolute;
   top: 45%;
   left: 30%;
-  text-align: center;
 }
 .motivacion_container .motivacion-container-musculacion h2 {
+  align-items: center;
   color: #ffffff;
 }
 .motivacion_container .motivacion-container-musculacion h2 p {
+  font-size: 10vh;
   color: #ff9a76;
-}
-.motivacion_container img {
-  display: block;
-  transition: none;
-  transform: none;
-  width: 100%;
-  height: auto;
-}
-.motivacion_container .content_subtitulo-motivacion {
-  width: auto;
-  position: absolute;
-  text-align: start;
-  top: 0;
 }
 
 .content_beneficios-section {
@@ -648,31 +660,7 @@ img:hover {
   border-right: #5D576B 1px solid;
 }
 
-/*Contendor de imagenes en pagina BOXEO*/
-.container_boximages {
-  padding: 3rem 1rem 3rem 3rem;
-  margin: auto;
-  grid-area: box_imagenes;
-  width: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container_boximages div {
-  margin-left: 5rem;
-}
-.container_boximages div img {
-  width: 50vh;
-}
-.container_boximages h2 {
-  font-family: "Montserrat", sans-serif;
-  color: #2e4442;
-  text-align: left;
-}
-.container_boximages h2 p {
-  color: #ED6A5A;
-  font-size: 8vh;
-}
+/*Contendor de imagenes en pagina BOXEO*
 
 /*CIERRA Contendor de imagenes en pagina BOXEO*/
 .header_imagenes {
@@ -1097,6 +1085,12 @@ img:hover {
   }
   .motivacion_container div h2 p {
     font-size: 32px;
+  }
+  .motivacion_container .content_subtitulo-motivacion {
+    width: auto;
+    position: absolute;
+    text-align: center;
+    top: 0;
   }
   .gridboxeo-container {
     margin-top: 20rem;
