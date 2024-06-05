@@ -1042,6 +1042,7 @@ img:hover {
     height: auto;
     margin-top: 5rem;
     margin-bottom: 15rem;
+    padding: 2rem;
   }
   .container_main .content_beneficios .content_beneficios-section:hover {
     transform: none;
@@ -1122,20 +1123,15 @@ img:hover {
     font-size: 1vh;
   }
   .gridboxeo-container .content_stuff {
-    text-align: center;
-    width: auto;
     margin: auto;
-    height: 100%;
     padding: 0rem;
     display: flex;
     flex-direction: column;
-    justify-self: start;
   }
   .gridboxeo-container .content_stuff * {
     font-size: 96%;
   }
   .gridboxeo-container .content_stuff h2 {
-    text-align: center;
     font-size: 200%;
   }
   .gridboxeo-container .content_stuff .content_stuff-text {
@@ -1146,22 +1142,19 @@ img:hover {
   }
   .gridboxeo-container .content_stuff div img {
     margin-top: 3rem;
-    width: 50%;
+    width: 40%;
   }
   .gridboxeo-container .container_boximages {
-    width: 80%;
-    margin: 0rem;
+    width: auto;
+    margin: auto;
     padding: 0rem;
     justify-self: center;
-  }
-  .gridboxeo-container .container_boximages div {
-    margin: 0rem;
   }
   .gridboxeo-container .container_boximages div h2 {
     font-size: 3vh;
   }
   .gridboxeo-container .container_boximages div img {
-    margin: 0rem;
+    max-width: 200px;
     width: 70%;
   }
   .container_musculacion {

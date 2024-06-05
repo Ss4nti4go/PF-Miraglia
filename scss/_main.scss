@@ -908,6 +908,7 @@ img:hover {
             height: auto;
             margin-top: 5rem;
             margin-bottom: 15rem;
+            padding: 2rem;
             .content_beneficios-section:hover{
                 transform: none;
             }
@@ -919,7 +920,6 @@ img:hover {
             display: flex;
             flex-direction: column;
         }
-
         .content_horarios {
             text-align: center;
             margin-top: 3rem;
@@ -1004,11 +1004,8 @@ img:hover {
                 font-size: 96%;
             }
             h2{
-                text-align: center;
                 font-size: 200%;
             }
-            text-align: center;
-            width:auto;
             .content_stuff-text{
                 margin-left: 0.3rem;
                 width: 75%;
@@ -1016,33 +1013,28 @@ img:hover {
                 margin-bottom: 5rem;
             }
             margin: auto;
-            height: 100%;
             padding: 0rem;
             display: flex;
             flex-direction: column;
-            justify-self: start;
             div img{
                 margin-top: 3rem;
-                width: 50%;
+                width: 40%;
             }
         }
         .container_boximages{
-            width: 80%;
-            margin: 0rem;
+            width: auto;
+            margin: auto;
             padding: 0rem;
             justify-self: center;
             div {
-                margin: 0rem;
                 h2{
                     font-size: 3vh;
                 }
                 img{
-                    margin: 0rem;
+                    max-width: 200px;
                     width: 70%;
                 }
-            
             }
-           
         }
     }
     .container_musculacion {
