@@ -1,20 +1,12 @@
 //Edicion de títulos y texto
 @import url('https://fonts.googleapis.com/css?family=Abel|Aguafina+Script|Artifika|Athiti|Condiment|Dosis|Droid+Serif|Farsan|Gurajada|Josefin+Sans|Lato|Lora|Merriweather|Noto+Serif|Open+Sans+Condensed:300|Playfair+Display|Rasa|Sahitya|Share+Tech|Text+Me+One|Titillium+Web');
-
 body {
     width: 100%;
 }
 a {
     text-decoration: none;
 }
-.content_beneficios-section p {
-    color: #afabab;
-}
-.content_textobeneficios {
-    display: flex;
-    justify-content: space-evenly;
-}
-h2,h3{
+h3{
     display: flex;
     text-align: center;
     font-family: "Montserrat", sans-serif;
@@ -25,31 +17,22 @@ h2,h3{
         color: black;
     }
 }
-
-.content_subtitulo-beneficios {
-    color: #ffffff;
-
-}
-
-.content_subtitulo-beneficios p {
-    color: $colorNaranjaRojizo;
-}
-
-
-//Cierra edicion de títulos y texto
-//HOVERS
-.content_beneficios-section:hover {
-    transform: scale(1.12);
-}
-
-.container_boximages img:hover {
-    transform: scale(1.05);
+h2 {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #000000;
+    font-size: 6vh;
+    p {
+        color: $colorNaranjaRojizo;
+        font-size: 7vh;
+    }
 }
 
 .btn-primary:hover {
     background-color: #397a3c;
 }
-
 img {
     transition: transform 0.4s ease;
 }
@@ -57,8 +40,6 @@ img {
 img:hover {
     transform: scale(1.05);
 }
-
-//CIERRA HOVERS
 
 /*GRID INDEX: Asi se organizará la informacion de la pagina boxeo de 1200px de ancho en adelante*/
 .container_main {
@@ -77,7 +58,7 @@ img:hover {
     ;
 
     .content_maintextindex {
-        width: 50vh;
+        width: 50%;
         display: flex;
         height: auto;
         margin-top: 5rem;
@@ -85,10 +66,7 @@ img:hover {
         flex-direction: column;
         justify-self: center;
         grid-area: main-text;
-        -webkit-box-shadow: $sombraGrisDos;
-        -moz-box-shadow: $sombraGrisDos;
         box-shadow: $sombraGrisDos;
-
         p {
             text-align: center;
         }
@@ -105,51 +83,53 @@ img:hover {
         color: white;
         grid-area: beneficios;
         height: 30rem;
-        -webkit-box-shadow: 2px -3px 20px 10px rgba(0, 0, 0, 0.57);
-        -moz-box-shadow: 2px -3px 20px 10px #00000091;
+        .content_textobeneficios {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .content_beneficios-section:hover {
+            transform: scale(1.05);
+        }
+        h2{
+            color: #ffffff;
+            p{
+                color: $colorNaranjaRojizo;
+            }
+        }
+        p {
+            color: #afabab;
+        }
         box-shadow: 2px -3px 20px 10px rgba(0, 0, 0, 0.57);
     }
-    
     .content_horarios {
         display: flex;
         flex-direction: column;
         grid-area: horarios;
-    
         .horarios {
             margin: 2rem;
             padding: 15px;
         }
-        h4 p{
-            color: $colorNaranjaRojizo;
-        }
+        h4{
+            font-family: "Montserrat", sans-serif;
+            display: flex;
+            font-weight: 600;
+            font-size: 7vh;
+            p{
+                color: $colorNaranjaRojizo;
+            }
+        } 
         td {
-    
             border-bottom: #cfc4c4 solid 1px;
             text-align: left;
             transition: transform 0.2s ease-in;
             .table-subtitle {
                 color: #d1a666;
             }
-        }
-    
+        } 
         td:hover {
-            margin: auto;
-            width: auto;
             .table-subtitle {
                 color: $colorAmarilloClaro;
             }
-        }
-    
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-    
-        .content_subtitulo-horarios {
-            font-family: "Montserrat", sans-serif;
-            display: flex;
-            flex-direction: row;
-            font-weight: 600;
-            font-size: 7vh;
         }
     }
 }
@@ -179,26 +159,9 @@ img:hover {
         flex-direction: column;
         justify-self: center;
         grid-area: main-text;
-        box-shadow: none;
-
         p {
             text-align: center;
         }
-
-        h2 {
-            display: flex;
-            flex-direction: row;
-            text-align: center;
-            font-family: "Montserrat", sans-serif;
-            color: #000000;
-            font-size: 6vh;
-
-            p {
-                color: $colorNaranjaRojizo;
-                font-size: 7vh;
-            }
-        }
-
         h4 {
             font-family: Roboto, sans-serif;
         }

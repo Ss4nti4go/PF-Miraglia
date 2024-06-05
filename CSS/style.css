@@ -249,16 +249,7 @@ a {
   text-decoration: none;
 }
 
-.content_beneficios-section p {
-  color: #afabab;
-}
-
-.content_textobeneficios {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-h2, h3 {
+h3 {
   display: flex;
   text-align: center;
   font-family: "Montserrat", sans-serif;
@@ -266,24 +257,21 @@ h2, h3 {
   color: #ED6A5A;
   font-size: 6vh;
 }
-h2 p, h3 p {
+h3 p {
   color: black;
 }
 
-.content_subtitulo-beneficios {
-  color: #ffffff;
+h2 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  font-size: 6vh;
 }
-
-.content_subtitulo-beneficios p {
+h2 p {
   color: #ED6A5A;
-}
-
-.content_beneficios-section:hover {
-  transform: scale(1.12);
-}
-
-.container_boximages img:hover {
-  transform: scale(1.05);
+  font-size: 7vh;
 }
 
 .btn-primary:hover {
@@ -308,7 +296,7 @@ img:hover {
   grid-template-areas: "header header" "main-text horarios" "main-text horarios" "beneficios beneficios" "acordion acordion" "footer footer";
 }
 .container_main .content_maintextindex {
-  width: 50vh;
+  width: 50%;
   display: flex;
   height: auto;
   margin-top: 5rem;
@@ -316,8 +304,6 @@ img:hover {
   flex-direction: column;
   justify-self: center;
   grid-area: main-text;
-  -webkit-box-shadow: 2px -3px 10px 10px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 2px -3px 10px 10px rgba(0, 0, 0, 0.5);
   box-shadow: 2px -3px 10px 10px rgba(0, 0, 0, 0.5);
 }
 .container_main .content_maintextindex p {
@@ -335,9 +321,23 @@ img:hover {
   color: white;
   grid-area: beneficios;
   height: 30rem;
-  -webkit-box-shadow: 2px -3px 20px 10px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: 2px -3px 20px 10px rgba(0, 0, 0, 0.568627451);
   box-shadow: 2px -3px 20px 10px rgba(0, 0, 0, 0.57);
+}
+.container_main .content_beneficios .content_textobeneficios {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container_main .content_beneficios .content_beneficios-section:hover {
+  transform: scale(1.05);
+}
+.container_main .content_beneficios h2 {
+  color: #ffffff;
+}
+.container_main .content_beneficios h2 p {
+  color: #ED6A5A;
+}
+.container_main .content_beneficios p {
+  color: #afabab;
 }
 .container_main .content_horarios {
   display: flex;
@@ -347,6 +347,12 @@ img:hover {
 .container_main .content_horarios .horarios {
   margin: 2rem;
   padding: 15px;
+}
+.container_main .content_horarios h4 {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  font-weight: 600;
+  font-size: 7vh;
 }
 .container_main .content_horarios h4 p {
   color: #ED6A5A;
@@ -359,22 +365,8 @@ img:hover {
 .container_main .content_horarios td .table-subtitle {
   color: #d1a666;
 }
-.container_main .content_horarios td:hover {
-  margin: auto;
-  width: auto;
-}
 .container_main .content_horarios td:hover .table-subtitle {
   color: #f0bf76;
-}
-.container_main .content_horarios tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-.container_main .content_horarios .content_subtitulo-horarios {
-  font-family: "Montserrat", sans-serif;
-  display: flex;
-  flex-direction: row;
-  font-weight: 600;
-  font-size: 7vh;
 }
 
 /*GRID BOXEO: Asi se organizará la informacion de la pagina boxeo de 1200px de ancho en adelante*/
@@ -395,22 +387,9 @@ img:hover {
   flex-direction: column;
   justify-self: center;
   grid-area: main-text;
-  box-shadow: none;
 }
 .gridboxeo-container .content_maintext p {
   text-align: center;
-}
-.gridboxeo-container .content_maintext h2 {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  color: #000000;
-  font-size: 6vh;
-}
-.gridboxeo-container .content_maintext h2 p {
-  color: #ED6A5A;
-  font-size: 7vh;
 }
 .gridboxeo-container .content_maintext h4 {
   font-family: Roboto, sans-serif;
