@@ -89,6 +89,13 @@ footer img{
         width: 12vh;
     }
     footer{
+        height: auto;
+        padding: 1rem;
+        section{
+          
+            display: flex;
+            flex-direction: column;
+        }
         div .content_footer_text{
             font-size: 85%;
             font-family: Verdana, Geneva, Tahoma, sans-serif;

@@ -1,16 +1,31 @@
 @import "var";
 header {
-    width: 100%;
-    height: 1000px;
-    margin-bottom: 5rem;
     grid-area: header;
-    /*ARRANCA CSS HEADER*/
-    .header_imagenes {
+    height: 1600px;
+    /*ARRANCA CSS HEADER*/  
+    .header_imagenes{
         display: flex;
         justify-content: space-evenly;
     }
+    .opener-navbar-button{
+        display: none;
+    }
+    input{
+        display: none;
+    }
+    .header_imagenes-index{
+        position: relative;
+        top: -300px;
+    }
+    img{
+        -webkit-box-shadow: 2px -0px 30px 10px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 2px 0px 30px 10px rgba(0, 0, 0, 0.5);
+        box-shadow: 2px -0px 30px 10px rgba(0, 0, 0, 0.5);
+    }
+    section div{
+        height: fit-content;
+    }
     .header_menuinicio {
-       
         display: flex;
         justify-content: space-between;
     }
@@ -60,12 +75,14 @@ header {
         border-radius: 10%;
         transform: scale(1.05);
     }
-
+    .navbar-button-img{
+        width: 32px;
+    }
 }
 .header_index{
     background-image: url("../Assets/Imgs/FotoBoxeoFondo.svg");
-    height: 700px;
     width: 100%;
+    height: 900px;
 }
 .header_boxeo{
     background-image: url("../Assets/Imgs/FondoBoxeo.svg");
@@ -114,11 +131,7 @@ header {
     flex-wrap: wrap;
     border-bottom: black 1px solid;
 }
-img{
-    -webkit-box-shadow:$sombraGrisDos;
-    -moz-box-shadow:$sombraGrisDos;
-    box-shadow:$sombraGrisDos;
-}
+
 .imagen_seccion h6{
     img {
         max-height: 175px;
@@ -141,7 +154,15 @@ img{
 }
 @media (max-width: 1340px) {
     header{
-    
+        .header_imagenes {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            align-items: center;
+           
+        }
+
+        height: auto;
         margin-bottom: 0rem;
         .header_menuinicio{
             background-color: $sombraAzulOscuro;
@@ -169,27 +190,39 @@ img{
 }
 @media (max-width: 1100px) {
     header{
+        height: 185 0px;
         .Header_contactanos{
-            height: 1600px;
+            height: auto;
         }
-        .header_imagenes {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            .imagen_seccion{
-                justify-self: center;
-            }
-        }
-        height: 1600px;
-        margin-bottom: 30rem;
+    
+        margin-bottom: auto;
         .header_menuinicio{
             background-color: $sombraAzulOscuro;
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-bottom: 11rem;
+            .header_navmenu{
+                display: none;
+                position: sticky;
+            }
+            .opener-navbar-button{
+                display: block;
+            }
+            .header_ul_botones{
+                display: flex;
+                flex-direction: column;
+            
+                
+            }
+            input:checked ~ .header_navmenu{
+                display: flex;
+                flex-direction: column;
+                text-align: start;
+                height: auto;
+                padding: 1rem;
+            }
+    
             .header_logopequeño{
                 margin-bottom: 0.2rem;
                 margin-top: 0.3rem;
