@@ -8,11 +8,7 @@ main{margin:auto}
 a {
     text-decoration: none;
 }
-h2,h3,h4,h5{
-    p{
-        font-family: "Montserrat", sans-serif;
-    }
-}
+
 h3{
     display: flex;
     text-align: center;
@@ -119,7 +115,7 @@ img:hover {
             font-family: "Montserrat", sans-serif;
             display: flex;
             font-weight: 600;
-            font-size: 7vh;
+            font-size: 6vw;
             p{
                 color: $colorNaranjaRojizo;
             }
@@ -932,11 +928,11 @@ img:hover {
             td {
                 text-align: center;
             }  
-        
-            .content_subtitulo-horarios{
-                display: flex;
-                font-size: 4vh;
-            }
+            h4{
+                font-size: 7vw;
+             
+            } 
+           
         }
     }
     .motivacion_container {
@@ -1019,7 +1015,7 @@ img:hover {
             display: flex;
             flex-direction: column;
             div img{
-                margin-top: 3rem;
+                margin-top: 10vw;
                 width: 40%;
             }
         }
