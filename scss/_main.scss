@@ -45,7 +45,7 @@ img:hover {
 
 /*GRID INDEX: Asi se organizará la informacion de la pagina boxeo de 1200px de ancho en adelante*/
 .container_main {
-    margin-top: 20rem;
+
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-auto-columns: auto auto auto;
@@ -243,7 +243,7 @@ img:hover {
         "footer footer"
     ;
     justify-content: center;
-    margin-top: 20rem;
+   
 
     .content_maintext {
         display: flex;
@@ -255,7 +255,7 @@ img:hover {
         grid-area: main-text;
         box-shadow: none;
         text-align: start;
-
+        max-width: 80%;
         section {
             margin-top: 4rem;
             text-align: center;
@@ -514,17 +514,21 @@ img:hover {
 .container_contactanos-form {
     margin-top: 3rem;
     padding: 30px;
+    height: 100%;
     background-color: #f0f0f0;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
 .container_contact-boostrap {
-    margin-top: 0.5rem;
-    margin-bottom: 5rem;
-    text-align: center;
+    width: 300px;
+    height: 100%;
+    margin: auto;
+    margin-top: 30rem;
     .row-sm{
         text-align: center;
+        width: 100%;
+        margin-top: 3rem;
     }
     div h3 {
         margin: 0rem;
@@ -544,10 +548,15 @@ img:hover {
     }
     .container_contactanos {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         text-align: center;
     }
+    .form-group{
+        width: 10px;
+    }
     .form-control {
+        width: auto;
         border-radius: 5px;
         border: 1px solid #ccc;
         padding: 10px;
@@ -570,6 +579,7 @@ img:hover {
     transition: background-color 0.3s ease-in-out;
 }
 // cartas Tienda
+
 .card-container {
     margin: 30rem 0rem 10rem 0rem;
     height: 100%;
@@ -1036,6 +1046,7 @@ img:hover {
         }
     }
     .container_musculacion {
+        margin-top:10rem;
         display: grid;
         width: 100%;
         grid-template-columns: 1fr;
@@ -1051,7 +1062,6 @@ img:hover {
         ;
         text-align: center;
         justify-content: center;
-        margin-top: 53rem;
         
         .content_maintext {
             flex-direction: column;
@@ -1151,44 +1161,6 @@ img:hover {
             margin: 1rem;
             min-width: 300px;  /* Reducido desde 400px */
             min-height: 400px;  /* Reducido desde 500px */
-            border-radius: 20px;
-            position: relative;
-            transition: transform 1s ease-in-out;
-            transform-style: preserve-3d;
-            perspective: 1000px;
-            box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.774);
-            &:hover {
-                transform: rotateY(180deg);
-            }
-        
-            .side {
-                position: absolute;
-                text-align: center;
-                width: 100%;
-                height: 100%;
-                padding: 10px 20px;  /* Reducido el padding */
-                color: #fff;
-                backface-visibility: hidden;
-                border-radius: 20px;
-            }
-        
-            .front {
-                background: #1e1e1e;
-                z-index: 2;
-            }
-        
-            .back {
-                background: #333;
-                transform: rotateY(180deg);
-                z-index: 0;
-            }
-        
-            .content,
-            .content1 {
-                transform: translateZ(50px) scale(0.7);  /* Reducido desde 70px */
-                line-height: 1.5em;
-            }
-        
             .content h3 {
                 margin: 0;
                 font-size: 1.5rem;  /* Reducido desde 2rem */
@@ -1199,124 +1171,14 @@ img:hover {
                 line-height: 1.5em;
             }
         
-            .content h3:before {
-                content: "";
-                position: absolute;
-                bottom: -15px;  /* Ajustado */
-                height: 3px;  /* Ajustado */
-                background-color: #3e3;
-                width: 50px;  /* Ajustado */
-                left: 50%;
-                transform: translateX(-50%);
-            }
-        
-            .btn {
-                background-color: #3e3;
-                border: none;
-                border-radius: 5px;
-                color: white;
-                cursor: pointer;
-                padding: 0.3rem 0.7rem;  /* Reducido el padding */
-                text-decoration: none;
-                transition: background-color 0.3s, transform 0.3s;
-            }
-        
-            .btn:hover {
-                background-color: #2e2;
-                transform: scale(1.05);
-            }
-        
             .slider {
-                width: 250px;  /* Reducido desde 310px */
-                height: 200px;  /* Reducido desde 300px */
-                background-color: #222;
-                margin: 0.5rem 0 2rem 0;
-                text-align: center;
-                overflow: hidden;
-                position: relative;
-                border-radius: 10px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        
-                .slide {
-                    margin: 0;
-                    padding: 0;
-                    flex: 0 0 250px;  /* Ajustado */
-                }
-        
-                .image-container {
-                    width: 750px;  /* Ajustado */
-                    height: 200px;  /* Ajustado */
-                    display: flex;
-                    transition: transform 0.5s ease;
-        
-                    img {
-                        width: 250px;  /* Ajustado */
-                        height: 200px;  /* Ajustado */
-                        object-fit: cover;
-                        border-radius: 10px;
-                    }
-                }
-        
-                #slide-1:target~.image-container {
-                    transform: translateX(0);
-                }
-        
-                #slide-2:target~.image-container {
-                    transform: translateX(-250px);  /* Ajustado */
-                }
-        
-                #slide-3:target~.image-container {
-                    transform: translateX(-500px);  /* Ajustado */
-                }
-        
-                .buttons {
-                    position: absolute;
-                    bottom: 10px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    display: flex;
-                    gap: 10px;
-        
-                    a {
-                        display: inline-block;
-                        height: 10px;  /* Reducido */
-                        width: 10px;  /* Reducido */
-                        border-radius: 50%;
-                        background-color: #3e3;
-                        transition: background-color 0.3s;
-                    }
-        
-                    a:hover {
-                        background-color: #8f8989;
-                    }
-        
-                    a:active {
-                        background-color: #ffffff;
-                    }
-                }
+                width: 200px;  /* Reducido desde 310px */
+                height: 180px;  
             }
-        
-            .card-content {
-                p {
-                    font-size: 2vh;  /* Reducido */
-                    margin-top: 1rem;  /* Ajustado */
-                    font-weight: 600;
-                    font-family: "Montserrat", sans-serif;
-                }
-        
-                a {
-                    font-size: 2vh;  /* Reducido */
-                    margin-top: 1rem;  /* Ajustado */
-                    font-weight: 300;
-                    font-family: "Montserrat", sans-serif;
-                    align-content: center;
-                }
+            .slide{
+                zoom: 0.6;
             }
-        }
-    }
-    .row-sm{
-        h3{
-            font-size: 16px;
+      
         }
     }
    

@@ -301,7 +301,6 @@ img:hover {
 
 /*GRID INDEX: Asi se organizará la informacion de la pagina boxeo de 1200px de ancho en adelante*/
 .container_main {
-  margin-top: 20rem;
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-auto-columns: auto auto auto;
@@ -472,7 +471,6 @@ img:hover {
   gap: 5px 5px;
   grid-template-areas: "header header" "imagenes_menu imagenes_menu" "main-text main-text" "motivacion motivacion" "main-secondtext content_secondtext" "footer footer";
   justify-content: center;
-  margin-top: 20rem;
 }
 .container_musculacion .content_maintext {
   display: flex;
@@ -484,6 +482,7 @@ img:hover {
   grid-area: main-text;
   box-shadow: none;
   text-align: start;
+  max-width: 80%;
 }
 .container_musculacion .content_maintext section {
   margin-top: 4rem;
@@ -711,6 +710,7 @@ img:hover {
 .container_contactanos-form {
   margin-top: 3rem;
   padding: 30px;
+  height: 100%;
   background-color: #f0f0f0;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -718,12 +718,15 @@ img:hover {
 }
 
 .container_contact-boostrap {
-  margin-top: 0.5rem;
-  margin-bottom: 5rem;
-  text-align: center;
+  width: 300px;
+  height: 100%;
+  margin: auto;
+  margin-top: 30rem;
 }
 .container_contact-boostrap .row-sm {
   text-align: center;
+  width: 100%;
+  margin-top: 3rem;
 }
 .container_contact-boostrap div h3 {
   margin: 0rem;
@@ -741,10 +744,15 @@ img:hover {
 }
 .container_contact-boostrap .container_contactanos {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
 }
+.container_contact-boostrap .form-group {
+  width: 10px;
+}
 .container_contact-boostrap .form-control {
+  width: auto;
   border-radius: 5px;
   border: 1px solid #ccc;
   padding: 10px;
@@ -1166,6 +1174,7 @@ img:hover {
     width: 70%;
   }
   .container_musculacion {
+    margin-top: 10rem;
     display: grid;
     width: 100%;
     grid-template-columns: 1fr;
@@ -1174,7 +1183,6 @@ img:hover {
     grid-template-areas: "header" "imagenes_menu" "main-text" "motivacion" "main-secondtext" "footer";
     text-align: center;
     justify-content: center;
-    margin-top: 53rem;
   }
   .container_musculacion .content_maintext {
     flex-direction: column;
@@ -1267,39 +1275,6 @@ img:hover {
     margin: 1rem;
     min-width: 300px; /* Reducido desde 400px */
     min-height: 400px; /* Reducido desde 500px */
-    border-radius: 20px;
-    position: relative;
-    transition: transform 1s ease-in-out;
-    transform-style: preserve-3d;
-    perspective: 1000px;
-    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.774);
-  }
-  .card-container .container:hover {
-    transform: rotateY(180deg);
-  }
-  .card-container .container .side {
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    padding: 10px 20px; /* Reducido el padding */
-    color: #fff;
-    backface-visibility: hidden;
-    border-radius: 20px;
-  }
-  .card-container .container .front {
-    background: #1e1e1e;
-    z-index: 2;
-  }
-  .card-container .container .back {
-    background: #333;
-    transform: rotateY(180deg);
-    z-index: 0;
-  }
-  .card-container .container .content,
-  .card-container .container .content1 {
-    transform: translateZ(50px) scale(0.7); /* Reducido desde 70px */
-    line-height: 1.5em;
   }
   .card-container .container .content h3 {
     margin: 0;
@@ -1309,104 +1284,12 @@ img:hover {
     margin-top: 20px; /* Reducido el margin-top */
     line-height: 1.5em;
   }
-  .card-container .container .content h3:before {
-    content: "";
-    position: absolute;
-    bottom: -15px; /* Ajustado */
-    height: 3px; /* Ajustado */
-    background-color: #3e3;
-    width: 50px; /* Ajustado */
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .card-container .container .btn {
-    background-color: #3e3;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-    padding: 0.3rem 0.7rem; /* Reducido el padding */
-    text-decoration: none;
-    transition: background-color 0.3s, transform 0.3s;
-  }
-  .card-container .container .btn:hover {
-    background-color: #2e2;
-    transform: scale(1.05);
-  }
   .card-container .container .slider {
-    width: 250px; /* Reducido desde 310px */
-    height: 200px; /* Reducido desde 300px */
-    background-color: #222;
-    margin: 0.5rem 0 2rem 0;
-    text-align: center;
-    overflow: hidden;
-    position: relative;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px; /* Reducido desde 310px */
+    height: 180px;
   }
-  .card-container .container .slider .slide {
-    margin: 0;
-    padding: 0;
-    flex: 0 0 250px; /* Ajustado */
-  }
-  .card-container .container .slider .image-container {
-    width: 750px; /* Ajustado */
-    height: 200px; /* Ajustado */
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-  .card-container .container .slider .image-container img {
-    width: 250px; /* Ajustado */
-    height: 200px; /* Ajustado */
-    object-fit: cover;
-    border-radius: 10px;
-  }
-  .card-container .container .slider #slide-1:target ~ .image-container {
-    transform: translateX(0);
-  }
-  .card-container .container .slider #slide-2:target ~ .image-container {
-    transform: translateX(-250px); /* Ajustado */
-  }
-  .card-container .container .slider #slide-3:target ~ .image-container {
-    transform: translateX(-500px); /* Ajustado */
-  }
-  .card-container .container .slider .buttons {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-  }
-  .card-container .container .slider .buttons a {
-    display: inline-block;
-    height: 10px; /* Reducido */
-    width: 10px; /* Reducido */
-    border-radius: 50%;
-    background-color: #3e3;
-    transition: background-color 0.3s;
-  }
-  .card-container .container .slider .buttons a:hover {
-    background-color: #8f8989;
-  }
-  .card-container .container .slider .buttons a:active {
-    background-color: #ffffff;
-  }
-  .card-container .container .card-content p {
-    font-size: 2vh; /* Reducido */
-    margin-top: 1rem; /* Ajustado */
-    font-weight: 600;
-    font-family: "Montserrat", sans-serif;
-  }
-  .card-container .container .card-content a {
-    font-size: 2vh; /* Reducido */
-    margin-top: 1rem; /* Ajustado */
-    font-weight: 300;
-    font-family: "Montserrat", sans-serif;
-    align-content: center;
-  }
-  .row-sm h3 {
-    font-size: 16px;
+  .card-container .container .slide {
+    zoom: 0.6;
   }
 }
 .montserrat {
@@ -1449,7 +1332,7 @@ img:hover {
 }
 header {
   grid-area: header;
-  height: 1600px;
+  height: fit-content;
   /*ARRANCA CSS HEADER*/
 }
 header * {
@@ -1474,11 +1357,6 @@ header .header_imagenes-index {
   z-index: 1;
   top: -300px;
 }
-header img {
-  -webkit-box-shadow: 2px 0px 30px 10px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 2px 0px 30px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 2px 0px 30px 10px rgba(0, 0, 0, 0.5);
-}
 header section div {
   height: fit-content;
 }
@@ -1487,6 +1365,9 @@ header .header_menuinicio {
   justify-content: space-between;
   margin-bottom: 0px;
   top: 0px;
+}
+header .header_menuinicio a {
+  width: 180px;
 }
 header .header_textoinicio {
   text-align: center;
@@ -1503,10 +1384,8 @@ header .header_navmenu {
   animation: none;
 }
 header .header_logopequeño {
-  margin: 3rem;
-  width: 200px;
-  border: solids;
-  text-align: start;
+  margin: 2rem;
+  width: 100%;
 }
 header .header_ul_botones {
   background-color: rgba(35, 42, 53, 0.5);
@@ -1516,7 +1395,7 @@ header .header_ul_botones {
 header .header_ul_botones li {
   margin: 0.5rem;
   display: inline-block;
-  --clippy:polygon(0 0, 0 0, 0 100%, 0% 100%);
+  --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
   font-size: 23px;
   align-items: center;
   font-family: "Montserrat", sans-serif;
@@ -1532,7 +1411,7 @@ header .header_ul_botones li::after {
   clip-path: var(--clippy);
 }
 header .header_ul_botones li:hover {
-  --clippy:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  --clippy: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 header .header_ul_botones li a {
   transition: color 2s;
@@ -1579,12 +1458,8 @@ header .navbar-button-img {
 
 .header_contact {
   background-image: url("../Assets/Imgs/fontoContactanos.svg");
-  height: 1400px;
+  height: fit-content;
   width: 100%;
-}
-
-.header_contactanos {
-  height: 1200px;
 }
 
 .header_musculacion {
@@ -1593,7 +1468,8 @@ header .navbar-button-img {
   width: 100%;
 }
 
-.header_background, .header_boxeo {
+.header_background,
+.header_boxeo {
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -1654,6 +1530,7 @@ header .navbar-button-img {
     align-items: center;
   }
   header .header_menuinicio {
+    max-height: 120px;
     z-index: 10;
     position: sticky;
     top: 0px;
@@ -1662,16 +1539,15 @@ header .navbar-button-img {
     margin-bottom: 11rem;
   }
   header .header_menuinicio .header_logopequeño {
-    margin-bottom: 0.3rem;
-    margin-top: 0.5rem;
-    width: 10%;
-    min-width: 80px;
+    margin: 0.5rem;
+    padding: 0.3rem;
+    width: 70px;
   }
   header .header_menuinicio ul {
-    margin: 0.3rem 0.3rem 0.3rem 0.2rem;
+    margin: 0;
   }
   header .header_menuinicio ul li {
-    margin: 0.3rem;
+    margin: 0rem;
     background: none;
   }
   header .header_menuinicio ul li a {
@@ -1679,7 +1555,7 @@ header .navbar-button-img {
     background: none;
   }
 }
-@media (max-width: 1100px) {
+@media (max-width: 1105px) {
   header {
     height: 185 0px;
     margin-bottom: auto;
@@ -1696,29 +1572,30 @@ header .navbar-button-img {
   }
   header .header_menuinicio .header_navmenu .header_ul_botones {
     animation: none;
-    position: relative;
-    background-color: #a0a59b;
+    margin: 0;
+    position: absolute;
+    background-color: rgb(46, 54, 66);
     z-index: 2;
+    top: 90px;
+    height: 320px;
     bottom: 0;
-    width: 90%;
-    height: 100%;
     right: 0;
-  }
-  header .header_menuinicio .opener-navbar-button {
-    display: block;
-  }
-  header .header_menuinicio .header_ul_botones {
+    width: 100vw;
+    right: 0px;
     display: flex;
+    transition: max-height 1s ease-out;
     flex-direction: column;
-    top: 80px;
   }
-  header .header_menuinicio .header_ul_botones li {
+  header .header_menuinicio .header_navmenu .header_ul_botones li {
     margin: 0;
     justify-content: center;
   }
-  header .header_menuinicio .header_ul_botones li::after {
+  header .header_menuinicio .header_navmenu .header_ul_botones li::after {
     transition: none;
     height: 0px;
+  }
+  header .header_menuinicio .opener-navbar-button {
+    display: block;
   }
   header .header_menuinicio input:checked ~ .header_navmenu {
     display: flex;
@@ -1726,9 +1603,6 @@ header .navbar-button-img {
     text-align: start;
     height: auto;
     padding: 1rem;
-  }
-  header .header_menuinicio .header_logopequeño {
-    margin: 0px 0px 0px 16px;
   }
   header .header_menuinicio ul {
     margin: 0.5rem 0.5rem 0.3rem 0.2rem;

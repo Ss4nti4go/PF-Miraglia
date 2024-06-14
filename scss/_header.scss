@@ -2,44 +2,50 @@
 
 header {
     grid-area: header;
-    height: 1600px;
-    *{
+    height: fit-content;
+
+    * {
         font-family: "Montserrat", sans-serif;
         font-weight: 600;
     }
-    /*ARRANCA CSS HEADER*/  
-    .header_imagenes{
+
+    /*ARRANCA CSS HEADER*/
+    .header_imagenes {
         display: flex;
         justify-content: space-evenly;
     }
-    .opener-navbar-button{
+
+    .opener-navbar-button {
         position: absolute;
         top: 32px;
         right: 16px;
         display: none;
     }
-    input{
+
+    input {
         display: none;
     }
-    .header_imagenes-index{
+
+    .header_imagenes-index {
         position: relative;
         z-index: 1;
         top: -300px;
     }
-    img{
-        -webkit-box-shadow: 2px -0px 30px 10px rgba(0, 0, 0, 0.5);
-        -moz-box-shadow: 2px 0px 30px 10px rgba(0, 0, 0, 0.5);
-        box-shadow: 2px -0px 30px 10px rgba(0, 0, 0, 0.5);
-    }
-    section div{
+
+ 
+
+    section div {
         height: fit-content;
     }
+
     .header_menuinicio {
         display: flex;
         justify-content: space-between;
         margin-bottom: 0px;
         top: 0px;
+        a{width: 180px; }
     }
+
     .header_textoinicio {
         text-align: center;
         color: white;
@@ -49,31 +55,32 @@ header {
         top: 300px;
         background-color: rgba(35, 42, 53, 0.507);
     }
+
     .header_navmenu {
         display: flex;
         align-items: start;
         animation: none;
-     
+
     }
     .header_logopequeño {
-        margin: 3rem;
-        width: 200px;
-        border: solids;
-        text-align: start;
+        margin: 2rem;
+        width: 100%;
     }
     .header_ul_botones {
         background-color: rgba(35, 42, 53, 0.5);
         margin: 3rem;
         padding: 0px;
     }
+
     .header_ul_botones li {
         margin: 0.5rem;
         display: inline-block;
-        --clippy:polygon(0 0, 0 0, 0 100%, 0% 100%);
+        --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
         font-size: 23px;
         align-items: center;
         font-family: "Montserrat", sans-serif;
-        &::after{
+
+        &::after {
             content: "";
             display: flex;
             background-color: #fff;
@@ -83,81 +90,95 @@ header {
             transition: clip-path .3s;
             clip-path: var(--clippy);
         }
-        &:hover{
-            --clippy:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+        &:hover {
+            --clippy: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
         }
     }
+
     .header_ul_botones li a {
         transition: color 2s;
         transition: border-color 2s, color 0.3s;
-        display: flex;   
-        padding:16px;
+        display: flex;
+        padding: 16px;
         justify-content: center;
         color: rgb(235, 232, 232);
-   
-        p{
+
+        p {
             margin: 0px;
             transition: color 1s;
             color: #00000000;
         }
     }
+
     .header_ul_botones li a:hover {
         color: $titleColor;
-        p{
+
+        p {
             color: $titleColor;
         }
+
         border-radius: 10%;
         transform: scale(1.05);
     }
-    .navbar-button-img{
+
+    .navbar-button-img {
         width: 32px;
     }
 }
-.header_index{
+
+.header_index {
     background-image: url("../Assets/Imgs/FotoBoxeoFondo.svg");
     width: 100%;
     height: 900px;
 }
-.header_boxeo{
+
+.header_boxeo {
     background-image: url("../Assets/Imgs/FondoBoxeo.svg");
     height: 700px;
     width: 100%;
 }
-.header_tienda{
+
+.header_tienda {
     background-image: url("../Assets/Imgs/fondoGaleria.svg");
     height: 600px;
     width: 100%;
 }
-.header_contact{
+
+.header_contact {
     background-image: url("../Assets/Imgs/fontoContactanos.svg");
-    height: 1400px;
+    height: fit-content;
     width: 100%;
 }
-.header_contactanos{
-    height: 1200px;
-}
-.header_musculacion{
+
+.header_musculacion {
     background-image: url("../Assets/Imgs/fotofondoGimnasio.svg");
     height: 700px;
     width: 100%;
 }
-.header_background, .header_boxeo{
+
+.header_background,
+.header_boxeo {
     width: 100%;
-    background-size:cover; 
-    background-position:center;
+    
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     -webkit-box-shadow: 2px -0px 30px 10px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 2px 0px 30px 10px rgba(0, 0, 0, 0.5);
     box-shadow: 2px -0px 30px 10px rgba(0, 0, 0, 0.5);
 }
-.img_animacion:hover{
+
+.img_animacion:hover {
     opacity: 1.0;
-  
+
 }
-.imagen_seccion{
+
+.imagen_seccion {
     max-width: 430px;
 }
-.imagen_seccion-description{
+
+.imagen_seccion-description {
     display: flex;
     text-align: center;
     width: 21.9rem;
@@ -166,58 +187,65 @@ header {
     border-bottom: black 1px solid;
 }
 
-.imagen_seccion h6{
+.imagen_seccion h6 {
     img {
         max-height: 175px;
         transition: none;
         transform: none;
     }
+
     margin-top: 15rem;
     height: 100px;
     font-size: 1.9rem;
     text-align: center;
-    background-color:rgb(24, 46, 75)  ;
+    background-color:rgb(24, 46, 75);
     display: flex;
     flex-direction: column-reverse;
     color: white;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s,
+    color 0.3s;
     animation: fadeIn 1s ease-in-out;
 }
-.imagen_seccion h6:hover{
+
+.imagen_seccion h6:hover {
     background: $colorNaranjaRojizo;
 }
+
 @media (max-width: 1340px) {
-    header{
+    header {
         .header_imagenes {
             display: flex;
             flex-direction: column;
             height: auto;
             align-items: center;
-           
+
         }
 
         height: auto;
         margin-bottom: 0rem;
-        .header_menuinicio{
+
+        .header_menuinicio {
+            max-height: 120px;
             z-index: 10;
             position: sticky;
             top: 0px;
             background-color: $colorAzulOscuro;
             align-items: center;
             margin-bottom: 11rem;
-            .header_logopequeño{
-                margin-bottom: 0.3rem;
-                margin-top: 0.5rem;
-                width: 10%;
-                min-width: 80px;
+            .header_logopequeño {
+                margin: 0.5rem;
+                padding: 0.3rem;
+                width: 70px;
             }
-            ul{
-                margin:0.3rem 0.3rem 0.3rem 0.2rem;
-            
-                li{
-                    margin: 0.3rem;
+
+            ul {
+                margin: 0;
+
+                li {
+                    margin: 0rem;
                     background: none;
-                    a{
+
+                    a {
                         font-size: 2vh;
                         background: none;
                     }
@@ -226,84 +254,95 @@ header {
         }
     }
 }
-@media (max-width: 1100px) {
-    header{
+
+@media (max-width: 1105px) {
+    header {
         height: 185 0px;
-        .Header_contactanos{
+
+        .Header_contactanos {
             height: auto;
         }
+
         margin-bottom: auto;
-        .header_menuinicio{
-            .opener-navbar-button{
+
+        .header_menuinicio {
+            .opener-navbar-button {
                 margin-right: 16px;
             }
-            .header_navmenu{
+
+            .header_navmenu {
                 display: none;
                 justify-content: end;
-                .header_ul_botones{
+                .header_ul_botones {
                     animation: none;
-                    position: relative;
-                    background-color: $colorVerdeGrisaceo;
+                    margin: 0;
+                    position: absolute;
+                    background-color: rgb(46, 54, 66);
                     z-index: 2;
+                    top: 90px;
+                    height: 320px;
                     bottom: 0;
-                    width: 90%;
-                    height: 100%;
-                    right:  0;
+                    right: 0;
+                    width: 100vw;
+                    right: 0px;
+                    display: flex;
+                    transition: max-height 1s ease-out;
+                    flex-direction: column;
+                
+                    li {
+                        &::after {
+                            transition: none;
+                            height: 0px;
+                        }
+                        a{}
+                        margin: 0;
+                        justify-content: center;
+                    }
                 }
             }
-            .opener-navbar-button{
+
+            .opener-navbar-button {
                 display: block;
             }
-            .header_ul_botones{
+
+            input:checked~.header_navmenu {
                 display: flex;
-                flex-direction: column;
-                top: 80px;
-                li{
-                    &::after{
-                        transition: none;
-                        height: 0px;
-                    }
-                    margin: 0;
-                    justify-content: center;
-                }
-            }
-            input:checked ~ .header_navmenu{
-                display: flex;
+                
                 flex-direction: column;
                 text-align: start;
                 height: auto;
                 padding: 1rem;
             }
-    
-            .header_logopequeño{
-                margin:0px 0px 0px 16px;
+            ul {
+                margin: 0.5rem 0.5rem 0.3rem 0.2rem;
 
-            }
-            ul{
-                margin:0.5rem 0.5rem 0.3rem 0.2rem;
-            
-                li{
-                  
+                li {
+
                     margin: 0.3rem;
                     background: none;
-                    a{
+
+                    a {
                         background: none;
                     }
                 }
             }
         }
-        .header_imagenes{
-            .imagen_seccion{
+
+        .header_imagenes {
+            .imagen_seccion {
                 min-width: 100px;
                 max-width: 350px;
                 width: 80%;
-              
+
             }
+
             font-size: 1.5vh;
-            .imagen_seccion-description h6{
+
+            .imagen_seccion-description h6 {
                 font-size: 1.5vh;
             }
-            div{
+
+            div {
                 height: fit-content;
                 width: 100%;
 
