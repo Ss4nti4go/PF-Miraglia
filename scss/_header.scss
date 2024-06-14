@@ -187,7 +187,7 @@ header {
     border-bottom: black 1px solid;
 }
 
-.imagen_seccion h6 {
+.imagen_seccion h2 {
     img {
         max-height: 175px;
         transition: none;
@@ -207,7 +207,7 @@ header {
     animation: fadeIn 1s ease-in-out;
 }
 
-.imagen_seccion h6:hover {
+.imagen_seccion h2:hover {
     background: $colorNaranjaRojizo;
 }
 
@@ -274,27 +274,27 @@ header {
                 display: none;
                 justify-content: end;
                 .header_ul_botones {
+                    display: none;
                     animation: none;
                     margin: 0;
                     position: absolute;
                     background-color: rgb(46, 54, 66);
                     z-index: 2;
                     top: 90px;
-                    height: 320px;
+                    height: 310px;
+                    max-height: 310px;
                     bottom: 0;
                     right: 0;
                     width: 100vw;
                     right: 0px;
                     display: flex;
-                    transition: max-height 1s ease-out;
                     flex-direction: column;
-                
                     li {
                         &::after {
                             transition: none;
                             height: 0px;
                         }
-                        a{}
+                        
                         margin: 0;
                         justify-content: center;
                     }
@@ -307,11 +307,10 @@ header {
 
             input:checked~.header_navmenu {
                 display: flex;
-                
                 flex-direction: column;
                 text-align: start;
                 height: auto;
-                padding: 1rem;
+                padding: 1rem; 
             }
             ul {
                 margin: 0.5rem 0.5rem 0.3rem 0.2rem;
@@ -333,14 +332,12 @@ header {
                 min-width: 100px;
                 max-width: 350px;
                 width: 80%;
-
+                h2{
+                    font-size: 2.5vh;
+                }
             }
 
             font-size: 1.5vh;
-
-            .imagen_seccion-description h6 {
-                font-size: 1.5vh;
-            }
 
             div {
                 height: fit-content;

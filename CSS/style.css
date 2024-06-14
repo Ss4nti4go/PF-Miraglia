@@ -262,19 +262,18 @@ a {
   text-decoration: none;
 }
 
+/*h2{
+    display: flex;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    text-wrap: nowrap;
+    color: $colorNaranjaRojizo;
+    font-size: 5.4vh;
+    p {
+        color: black;
+    }
+}*/
 h3 {
-  display: flex;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  text-wrap: nowrap;
-  color: #ED6A5A;
-  font-size: 5.4vh;
-}
-h3 p {
-  color: black;
-}
-
-h2 {
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -282,7 +281,7 @@ h2 {
   color: #2e4442;
   font-size: 6vh;
 }
-h2 p {
+h3 p {
   color: #ED6A5A;
   font-size: 7vh;
 }
@@ -342,10 +341,10 @@ img:hover {
 .container_main .content_beneficios .content_beneficios-section:hover {
   transform: scale(1.05);
 }
-.container_main .content_beneficios h2 {
+.container_main .content_beneficios h3 {
   color: #ffffff;
 }
-.container_main .content_beneficios h2 p {
+.container_main .content_beneficios h3 p {
   color: #ED6A5A;
 }
 .container_main .content_beneficios p {
@@ -360,13 +359,14 @@ img:hover {
   margin: 2rem;
   padding: 15px;
 }
-.container_main .content_horarios h4 {
+.container_main .content_horarios h5 {
   font-family: "Montserrat", sans-serif;
   display: flex;
+  margin: auto;
   font-weight: 600;
   font-size: 6vw;
 }
-.container_main .content_horarios h4 p {
+.container_main .content_horarios h5 p {
   color: #ED6A5A;
 }
 .container_main .content_horarios td {
@@ -421,11 +421,11 @@ img:hover {
   width: 40vh;
   max-width: 350px;
 }
-.gridboxeo-container .container_boximages h2 {
+.gridboxeo-container .container_boximages h3 {
   font-family: "Montserrat", sans-serif;
   margin: auto;
 }
-.gridboxeo-container .container_boximages h2 p {
+.gridboxeo-container .container_boximages h3 p {
   color: #ED6A5A;
   font-size: 8vh;
 }
@@ -445,8 +445,8 @@ img:hover {
   color: #f0bf76;
   text-align: left;
 }
-.gridboxeo-container .content_stuff h2 {
-  text-align: left;
+.gridboxeo-container .content_stuff h4 {
+  font-size: 3rem;
 }
 .gridboxeo-container .content_stuff .content_stuff-text {
   height: 10vh;
@@ -477,6 +477,7 @@ img:hover {
   flex-direction: column;
   width: auto;
   height: fit-content;
+  margin: auto;
   margin: 0rem 0rem 0rem 5rem;
   padding: 1rem;
   grid-area: main-text;
@@ -498,24 +499,15 @@ img:hover {
   width: 30vh;
   margin: 1rem;
 }
-.container_musculacion .content_maintext h2 {
-  display: flex;
-  font-family: "Montserrat", sans-serif;
-  color: #000000;
-  font-size: 6vh;
-}
-.container_musculacion .content_maintext h2 p {
-  color: #ED6A5A;
-  font-size: 7vh;
-}
-.container_musculacion .content_maintext h3 {
+.container_musculacion .content_maintext h4 {
   display: flex;
   font-family: "Montserrat", sans-serif;
   color: rgb(35, 42, 53);
   font-weight: 950;
   font-size: 4vh;
 }
-.container_musculacion .content_maintext h3 p {
+.container_musculacion .content_maintext h4 p {
+  text-align: center;
   color: #ED6A5A;
   font-size: 6vh;
 }
@@ -537,11 +529,17 @@ img:hover {
 .container_musculacion .content_secondtext article {
   margin: auto;
 }
-.container_musculacion .content_secondtext p {
+.container_musculacion .content_secondtext h5 {
+  display: flex;
+  flex-direction: row;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  font-size: 6vh;
 }
-.container_musculacion .content_secondtext h4 {
-  font-family: Roboto, sans-serif;
+.container_musculacion .content_secondtext h5 p {
+  color: #ED6A5A;
+  font-size: 7vh;
 }
 .container_musculacion .content_secondtext section {
   height: auto;
@@ -556,18 +554,6 @@ img:hover {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.container_musculacion .content_secondtext section h2 {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  color: #000000;
-  font-size: 6vh;
-}
-.container_musculacion .content_secondtext section h2 p {
-  color: #ED6A5A;
-  font-size: 7vh;
-}
 .container_musculacion .content_secondtext section .card-texto {
   background: #f0f0f0;
   padding: 3px;
@@ -577,7 +563,7 @@ img:hover {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
-  overflow: hidden;
+  text-align: center;
   position: relative;
 }
 .container_musculacion .content_secondtext section .card-texto:before {
@@ -598,7 +584,7 @@ img:hover {
 .container_musculacion .content_secondtext section .card-texto:hover:before {
   opacity: 0.1;
 }
-.container_musculacion .content_secondtext section .card-texto h3 {
+.container_musculacion .content_secondtext section .card-texto h5 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -610,7 +596,7 @@ img:hover {
   position: relative;
   z-index: 1;
 }
-.container_musculacion .content_secondtext section .card-texto h3 p {
+.container_musculacion .content_secondtext section .card-texto h5 p {
   margin-left: 10px;
   color: #ED6A5A;
 }
@@ -632,15 +618,15 @@ img:hover {
 }
 .motivacion_container .motivacion_container-boxeo {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 38%;
 }
-.motivacion_container .motivacion_container-boxeo h2 {
-  text-align: center;
-  align-items: center;
+.motivacion_container .motivacion_container-boxeo h4 {
+  font-size: 3rem;
   color: #f0bf76;
 }
-.motivacion_container .motivacion_container-boxeo h2 p {
+.motivacion_container .motivacion_container-boxeo h4 p {
+  text-align: center;
   color: #ff9a76;
 }
 .motivacion_container .motivacion-container-musculacion {
@@ -648,11 +634,12 @@ img:hover {
   top: 45%;
   left: 30%;
 }
-.motivacion_container .motivacion-container-musculacion h2 {
-  align-items: center;
+.motivacion_container .motivacion-container-musculacion h4 {
+  font-size: 3rem;
+  display: flex;
   color: #ffffff;
 }
-.motivacion_container .motivacion-container-musculacion h2 p {
+.motivacion_container .motivacion-container-musculacion h4 p {
   font-size: 10vh;
   color: #ff9a76;
 }
@@ -679,9 +666,8 @@ img:hover {
 /*CIERRA Contendor de Beneficios y tabla de horarios en pagina INDEX*/
 .accordion {
   grid-area: acordion;
-  justify-content: center;
+  margin: auto;
   width: auto;
-  margin: 4rem;
   margin-bottom: 6rem;
   -webkit-box-shadow: 2px -3px 20px 10px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 2px -3px 20px 10px rgba(0, 0, 0, 0.568627451);
@@ -718,14 +704,14 @@ img:hover {
 }
 
 .container_contact-boostrap {
-  width: 300px;
+  width: 280px;
   height: 100%;
   margin: auto;
   margin-top: 30rem;
 }
 .container_contact-boostrap .row-sm {
   text-align: center;
-  width: 100%;
+  width: auto;
   margin-top: 3rem;
 }
 .container_contact-boostrap div h3 {
@@ -749,7 +735,7 @@ img:hover {
   text-align: center;
 }
 .container_contact-boostrap .form-group {
-  width: 10px;
+  width: 20px;
 }
 .container_contact-boostrap .form-control {
   width: auto;
@@ -795,8 +781,6 @@ img:hover {
   position: relative;
   transition: transform 1s ease-in-out;
   transform-style: preserve-3d;
-  perspective: 1000px;
-  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.774);
 }
 .card-container .container p {
   font-size: 2vh;
@@ -810,6 +794,7 @@ img:hover {
   font-weight: 300;
   font-family: "Montserrat", sans-serif;
   align-content: center;
+  color: #fff;
   text-wrap: wrap;
 }
 .card-container .container .card-content p {
@@ -995,20 +980,25 @@ img:hover {
     justify-self: center;
   }
   .container_musculacion .content_maintext {
+    width: 90vw;
     margin-left: 0.2rem;
     padding: 0rem;
     justify-content: center;
     text-align: center;
   }
   .container_musculacion .content_maintext article {
-    justify-content: center;
-    justify-self: center;
     align-items: center;
     margin-left: 3rem;
     margin-right: 2rem;
     text-align: center;
     width: 54vh;
     height: 45vh;
+  }
+  .container_musculacion .content_maintext section {
+    text-align: end;
+  }
+  .container_musculacion .content_maintext section div {
+    margin: auto;
   }
   .container_musculacion .content_secondtext {
     justify-content: space-around;
@@ -1064,8 +1054,18 @@ img:hover {
   .container_main .content_beneficios .content_beneficios-section:hover {
     transform: none;
   }
-  .container_main .content_beneficios h2 {
-    font-size: 4vh;
+  .container_main .content_beneficios h3 {
+    font-size: 7vw;
+  }
+  .container_main .content_beneficios h3 p {
+    font-size: 7vw;
+  }
+  .container_main .content_beneficios .content_beneficios-section {
+    margin: auto;
+    margin-top: 1rem;
+  }
+  .container_main .content_beneficios .content_beneficios-section p {
+    margin: 2rem;
   }
   .container_main .content_textobeneficios {
     display: flex;
@@ -1080,6 +1080,8 @@ img:hover {
     padding: 15px;
   }
   .container_main .content_horarios td {
+    display: flex;
+    flex-direction: column;
     text-align: center;
   }
   .container_main .content_horarios h4 {
@@ -1089,25 +1091,25 @@ img:hover {
     margin: 8rem 0rem 5rem 0rem;
     height: 25rem;
   }
-  .motivacion_container div {
-    position: absolute;
-    top: 15%;
-    left: 1%;
-    margin-bottom: 3rem;
-  }
-  .motivacion_container div h2 {
-    text-wrap: wrap;
-    font-size: 32px;
-    align-items: center;
-  }
-  .motivacion_container div h2 p {
-    font-size: 32px;
-  }
   .motivacion_container .content_subtitulo-motivacion {
     width: auto;
     position: absolute;
     text-align: center;
     top: 0;
+  }
+  .motivacion_container .motivacion_container-boxeo {
+    position: absolute;
+    top: 40%;
+    left: 20vw;
+  }
+  .motivacion_container .motivacion_container-boxeo h4 {
+    margin: auto;
+    font-size: 3rem;
+    color: #f0bf76;
+  }
+  .motivacion_container .motivacion_container-boxeo h4 p {
+    text-align: center;
+    color: #ff9a76;
   }
   .gridboxeo-container {
     margin-top: 20rem;
@@ -1118,25 +1120,22 @@ img:hover {
   }
   .gridboxeo-container .content_maintext {
     margin: auto;
-    margin-top: 10rem;
     padding: 0rem;
-    width: 30vh;
+    width: 70vw;
   }
   .gridboxeo-container .content_maintext * {
     font-size: 90%;
   }
-  .gridboxeo-container .content_maintext h2 {
-    font-size: 3vh;
-    text-wrap: wrap;
+  .gridboxeo-container .content_maintext h3 {
+    text-align: center;
+    font-size: 7vw;
+    margin-left: 0;
   }
-  .gridboxeo-container .content_maintext h2 p {
-    font-size: 3vh;
+  .gridboxeo-container .content_maintext h3 p {
+    font-size: 7vw;
   }
   .gridboxeo-container .content_maintext h4 {
     font-size: 2vh;
-  }
-  .gridboxeo-container .content_maintext h3 {
-    font-size: 1vh;
   }
   .gridboxeo-container .content_stuff {
     margin: auto;
@@ -1147,27 +1146,23 @@ img:hover {
   .gridboxeo-container .content_stuff * {
     font-size: 96%;
   }
-  .gridboxeo-container .content_stuff h2 {
-    font-size: 200%;
-  }
   .gridboxeo-container .content_stuff .content_stuff-text {
-    margin-left: 0.3rem;
+    height: 100%;
     width: 75%;
-    max-width: 480px;
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
   }
   .gridboxeo-container .content_stuff div img {
-    margin-top: 10vw;
     width: 40%;
-  }
-  .gridboxeo-container .container_boximages {
-    width: auto;
+    min-width: 140px;
+    max-width: 300px;
     margin: auto;
-    padding: 0rem;
-    justify-self: center;
+    margin-left: 2rem;
   }
-  .gridboxeo-container .container_boximages div h2 {
-    font-size: 3vh;
+  .gridboxeo-container .container_boximages .content_subtitulo-estudiantes {
+    font-size: 7vw;
+  }
+  .gridboxeo-container .container_boximages .content_subtitulo-estudiantes p {
+    font-size: 7vw;
   }
   .gridboxeo-container .container_boximages div img {
     max-width: 200px;
@@ -1187,9 +1182,9 @@ img:hover {
   .container_musculacion .content_maintext {
     flex-direction: column;
     max-width: 600px;
-    max-height: 1000px;
+    height: fit-content;
+    max-height: 1700px;
     margin: auto;
-    margin-top: 10rem;
     margin-bottom: 12rem;
     padding: 0rem;
     justify-content: center;
@@ -1211,21 +1206,35 @@ img:hover {
     align-items: center;
     place-items: center;
   }
-  .container_musculacion .content_maintext h2 {
-    font-size: 3vh;
-  }
-  .container_musculacion .content_maintext h2 p {
-    font-size: 3.5vh;
+  .container_musculacion .content_maintext section div img {
+    max-width: 200px;
   }
   .container_musculacion .content_maintext h3 {
-    font-size: 2.45vh;
+    font-size: 8vw;
   }
   .container_musculacion .content_maintext h3 p {
-    font-size: 3vh;
+    font-size: 8vw;
   }
   .container_musculacion .content_maintext h4 {
     text-align: center;
-    font-size: 2vh;
+    font-size: 6vw;
+  }
+  .container_musculacion .content_maintext h4 p {
+    font-size: 6vw;
+  }
+  .container_musculacion .motivacion-container-musculacion {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+  }
+  .container_musculacion .motivacion-container-musculacion h4 {
+    font-size: 3rem;
+    display: flex;
+    color: #ffffff;
+  }
+  .container_musculacion .motivacion-container-musculacion h4 p {
+    font-size: 10vh;
+    color: #ff9a76;
   }
   .container_musculacion .content_secondtext {
     display: flex;
@@ -1245,23 +1254,30 @@ img:hover {
   }
   .container_musculacion .content_secondtext section .card-texto {
     padding: 0.1rem;
-    font-size: 1.5vh;
+    font-size: 95%;
+    height: auto;
   }
-  .container_musculacion .content_secondtext section .card-texto h3 {
+  .container_musculacion .content_secondtext section .card-texto h5 {
+    font-size: 3vh;
+  }
+  .container_musculacion .content_secondtext section .card-texto h5 p {
     font-size: 3vh;
   }
   .container_musculacion .content_secondtext article div {
     width: 15rem;
   }
-  .container_musculacion .content_secondtext article h3 {
-    font-size: 45px;
+  .container_musculacion .content_secondtext article h5 {
+    font-size: 7vw;
     color: black;
   }
-  .container_musculacion .content_secondtext article h3 p {
+  .container_musculacion .content_secondtext article h5 p {
     color: #ED6A5A;
   }
   .container_musculacion .content_secondtext .disciplinas {
     margin: auto;
+  }
+  .container_musculacion .content_secondtext .disciplinas a {
+    margin-top: auto;
   }
   .card-container {
     margin: 40rem 0rem 5rem 0rem;
@@ -1272,20 +1288,23 @@ img:hover {
     grid-template-rows: repeat(6, 1fr);
   }
   .card-container .container {
-    margin: 1rem;
-    min-width: 300px; /* Reducido desde 400px */
-    min-height: 400px; /* Reducido desde 500px */
+    min-width: 280px;
+    min-height: 450px;
+    /* Reducido desde 500px */
   }
   .card-container .container .content h3 {
     margin: 0;
-    font-size: 1.5rem; /* Reducido desde 2rem */
+    font-size: 1.5rem;
+    /* Reducido desde 2rem */
   }
   .card-container .container .content p {
-    margin-top: 20px; /* Reducido el margin-top */
+    margin-top: 20px;
+    /* Reducido el margin-top */
     line-height: 1.5em;
   }
   .card-container .container .slider {
-    width: 200px; /* Reducido desde 310px */
+    width: 200px;
+    /* Reducido desde 310px */
     height: 180px;
   }
   .card-container .container .slide {
@@ -1496,7 +1515,7 @@ header .navbar-button-img {
   border-bottom: black 1px solid;
 }
 
-.imagen_seccion h6 {
+.imagen_seccion h2 {
   margin-top: 15rem;
   height: 100px;
   font-size: 1.9rem;
@@ -1508,13 +1527,13 @@ header .navbar-button-img {
   transition: background-color 0.3s, color 0.3s;
   animation: fadeIn 1s ease-in-out;
 }
-.imagen_seccion h6 img {
+.imagen_seccion h2 img {
   max-height: 175px;
   transition: none;
   transform: none;
 }
 
-.imagen_seccion h6:hover {
+.imagen_seccion h2:hover {
   background: #ED6A5A;
 }
 
@@ -1571,19 +1590,20 @@ header .navbar-button-img {
     justify-content: end;
   }
   header .header_menuinicio .header_navmenu .header_ul_botones {
+    display: none;
     animation: none;
     margin: 0;
     position: absolute;
     background-color: rgb(46, 54, 66);
     z-index: 2;
     top: 90px;
-    height: 320px;
+    height: 310px;
+    max-height: 310px;
     bottom: 0;
     right: 0;
     width: 100vw;
     right: 0px;
     display: flex;
-    transition: max-height 1s ease-out;
     flex-direction: column;
   }
   header .header_menuinicio .header_navmenu .header_ul_botones li {
@@ -1622,8 +1642,8 @@ header .navbar-button-img {
     max-width: 350px;
     width: 80%;
   }
-  header .header_imagenes .imagen_seccion-description h6 {
-    font-size: 1.5vh;
+  header .header_imagenes .imagen_seccion h2 {
+    font-size: 2.5vh;
   }
   header .header_imagenes div {
     height: fit-content;
